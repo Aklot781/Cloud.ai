@@ -7,7 +7,7 @@ import json
 
 app = FastAPI()
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="sk-...") //персональный ключ к подключению
 
 app.add_middleware(
     CORSMiddleware,
