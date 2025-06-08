@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud.ai</title>
+  <link rel="icon" href="img/AI_Логотип.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main_style.css">
+  <link rel="stylesheet" href="css/Setting_style.css">
+  <script src="js/setting.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <nav class="header-nav container element">
+        <div class="block">
+          <div class="block1"></div>
+          <div class="block2"></div>
+          <div class="block3"></div>
+        </div>
+        <ul class="list-reset header-list flex">
+          <div>
+            <li class="header-list-item">
+              <a href="Cloud_ai.html">
+                <img src="img/AI_Логотип.svg" alt="Logo">
+              </a>
+            </li>
+          </div>
+          <div class="flex header-nav-right">
+            <li class="header-list-item">
+              <form class="header-form">
+                <input name="s" class="header-form-input" type="search">
+                <button class="header-form-btn" type="submit"></button>
+              </form>
+            </li>
+            <li class="header-list-item">
+              <a href="profile.html">
+                <img src="img/профиль.svg" alt="Logo">
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Настройки профиля</h1>
+    <form id="settings-form">
+      <label>
+        <p>Логин:</p>
+        <input type="text" id="login" name="login" required />
+      </label><br><br>
+
+      <label>
+        <p>Email:</p>
+        <input type="email" id="email" name="email" required />
+      </label><br><br>
+
+      <label>
+        <p>Новый пароль:</p>
+        <input type="password" id="password" name="password" placeholder="Оставьте пустым, если не меняете" />
+      </label><br><br>
+
+      <button type="submit">Сохранить</button>
+      <div id="settings-message"></div>
+    </form>
+
+  </section>
+
+</body>
+
+</html>

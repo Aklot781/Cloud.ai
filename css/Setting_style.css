@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+html {
+  box-sizing: border-box;
+  background-color: #0E0613;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxanium', sans-serif;
+  color: #fff;
+}
+
+
+/* Основной контейнер формы */
+.settings-section {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background-color: #540C14;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(135, 21, 34, 0.5);
+}
+
+/* Заголовок */
+.settings-section h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Метки и поля ввода */
+#settings-form label {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+#settings-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #871522;
+  border-radius: 20px;
+  background-color: #62111A;
+  color: #fff;
+  font-size: 16px;
+}
+
+#settings-form input::placeholder {
+  color: #bbb;
+}
+
+#settings-form input:focus {
+  outline: none;
+  border-color: #C33C4A;
+}
+
+/* Кнопка */
+#settings-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background-color: #871522;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#settings-form button[type="submit"]:hover {
+  background-color: #A31B2C;
+}
+
+#settings-form input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #68151F inset !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 1px solid #871522;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Сообщение об успехе или ошибке */
+#settings-message {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}

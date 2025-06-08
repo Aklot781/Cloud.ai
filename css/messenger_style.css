@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+html {
+  box-sizing: border-box;
+  background: #0E0613;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1770px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  color: #FFF;
+}
+
+/* global */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* chat */
+.chat {
+  border: 1px solid #0E0613;
+  margin: 15px;
+  height: 70%;
+  background: #0E0613;
+  color: #fff;
+}
+
+.chat-messages {
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 93%;
+  max-height: 93%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.greeting {
+  width: 70%;
+  margin-bottom: 15px;
+	padding: 30px 50px;
+  background: #571018;
+  border-radius: 26px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.message {
+  border-radius: 26px;
+  margin: 15px 15px;
+  width: 70%;
+  clear: both;
+}
+
+.user-message {
+	padding: 30px 50px;
+  background: #571018;
+  color: #fff;
+  float: right; /* Сообщение пользователя справа */
+  font-size: 20px;
+}
+
+.bot-message {
+	padding: 30px 50px;
+  background: #571018;
+  color: #fff;
+  float: left; /* Сообщение бота слева */
+  font-size: 20px;
+}
+
+.chat-input {
+  min-height: 6%;
+}
+
+.chat-from {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-form-input {
+  padding: 22px 29px;
+  font-family: Arial;
+  font-size: 22px;
+  background: #571018;
+  color: #fff;
+  border: 0;
+  border-radius: 32px;
+  margin: 1px;
+  height: 68px;
+  width: 79%;
+}
+
+.chat-form-input:focus {  
+  background: #4a0a12;
+  border: 1px solid #4a0a12;
+}
+
+.chat-form-input:focus {
+  outline: none;
+}
+
+.chat-form-submit {
+  padding: 15px;
+  border-radius: 40px;
+  background: #571018;
+  border: 1px solid #571018;
+}
+
+.chat-form-submit:hover {
+  background: #4a0a12;
+  border: 1px solid #4a0a12;
+}
+
+.message .edit-btn,
+.message .delete-btn {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.message .edit-btn:hover,
+.message .delete-btn:hover {
+  color: #fff;
+}
+
+.message .edit-btn::after {
+  content: '✎';
+  margin-left: 8px;
+}
+
+.message .delete-btn::after {
+  content: '🗑️';
+  margin-left: 8px;
+}

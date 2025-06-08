@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+html {
+  box-sizing: border-box;
+  background: #0E0613;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* pointer-events: none; */
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1770px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1{
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 32px
+}
+
+p {
+  margin: 0;
+  color: #FFF;
+}
+
+/* global */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* profile */
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.profile-title {
+  margin-bottom: 16px;
+  font-size: 64px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.profile-descr {
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+
+.profile-btns{
+  gap: 26px;
+}
+
+.profile-btn {
+  padding: 10px 40px;
+  border-radius: 26px;
+  background-color: #68151F;
+  border: 1px solid #68151F;
+  color: #FFF;
+}
+
+.profile-btn-special {
+  background-color: #481313;
+  border: 1px solid #481313;
+}

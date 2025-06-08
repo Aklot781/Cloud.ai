@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud.ai - Регистрация и Авторизация</title>
+  <link rel="icon" href="img/AI_Логотип.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main_style.css">
+  <link rel="stylesheet" href="css/form_style.css">
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <nav class="header-nav container element">
+        <div class="block">
+          <div class="block1"></div>
+          <div class="block2"></div>
+          <div class="block3"></div>
+        </div>
+        <ul class="list-reset header-list flex">
+          <div>
+            <li class="header-list-item">
+              <a href="Cloud_ai.html">
+                <img src="img/AI_Логотип.svg" alt="Logo">
+              </a>
+            </li>
+          </div>
+          <div class="flex header-nav-right">
+            <li class="header-list-item">
+              <a href="profile.html">
+                <img src="img/профиль.svg" alt="Профиль">
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-wrapper">
+    <section class="form-section">
+      <h1 class="form-title">Регистрация</h1>
+      <form id="register-form" class="auth-form">
+        <input type="text" placeholder="Логин" name="login" required>
+        <input type="password" placeholder="Пароль" name="pass" required>
+        <input type="email" placeholder="Электронная почта" name="email" required>
+        <button type="submit" class="form-btn">Зарегистрироваться</button>
+      </form>
+      <p id="register-message" class="form-message"></p>
+    </section>
+
+    <section class="form-section">
+      <h1 class="form-title">Авторизация</h1>
+      <form id="login-form" class="auth-form">
+        <input type="text" placeholder="Логин" name="login" required>
+        <input type="password" placeholder="Пароль" name="pass" required>
+        <button type="submit" class="form-btn">Войти</button>
+      </form>
+      <p id="login-message" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer">
+      <div class="footer-info">
+        <h3>Адрес</h3>
+        <p>Челябинск, пр. Ленина 81</p>
+      </div>
+      <div class="footer-info">
+        <h3>Телефон</h3>
+        <p>+7 (354) 341-78-42</p>
+      </div>
+      <div class="footer-info">
+        <h3>Электронный адрес</h3>
+        <p>DND@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
